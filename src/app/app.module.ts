@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { TertiaryComponent } from './tertiary/tertiary.component';
 import { Directive1Directive } from './directive/directive-1.directive';
 import { DirectiveDirective } from './directive/directive.directive';
+import { PipeComponentPipe } from './pipe/pipe-component.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DirectiveDirective } from './directive/directive.directive';
     SecondaryComponent,
     TertiaryComponent,
     DirectiveDirective,
-    Directive1Directive
+    Directive1Directive,
+    PipeComponentPipe
   ],
   imports: [
     BrowserModule,

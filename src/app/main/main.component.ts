@@ -12,6 +12,12 @@ export class MainComponent implements OnInit{
   greetingMessage?: string;
   questionMessage?: string;
 
+  //Pipes
+  date?: Date = new Date
+  money?: number = 2000.10
+  percent?: number = 0.1
+  pi?: number = Math.PI
+
   //Stile Directive
   color: string = 'blue';
   fontSize: string = '24px'

@@ -1,5 +1,11 @@
 <h1 appDirective>{{messageComponent}}</h1>
+<h1 >{{messageComponent | titlecase}}</h1>
+<h2>La fecha actual es: {{date | date: 'dd-MM-yyyy hh:mm:ss'}}</h2>
+<h2>Tengo en efectivo: {{money | currency: 'EUR'}}</h2>
+<h2>El % es el siguiente: {{percent | percent }}</h2>
+<h2>El valor de PI es: {{ pi | number: '1.2-2' }}</h2>
 <br> 
+<!--
 <div [ngStyle]="{'color' : color, 'font-size': fontSize}">Texto con estilo dinámico.</div>
 <div [ngStyle]="{'highlight' : isHighlight}">ngClass.</div>
 <div *ngIf="isVisible">Aqui estoy Dev.</div>
@@ -13,3 +19,4 @@
 <button type="button" (click)="questionForSecondary()"> Qestion For Secondary</button>
 <p *ngIf="greetingMessage">{{greetingMessage}}</p>
 <p *ngIf="questionMessage">{{questionMessage}}</p>
+-->
