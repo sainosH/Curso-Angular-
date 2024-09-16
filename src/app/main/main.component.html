@@ -1,5 +1,14 @@
-<h1>{{messageComponent}}</h1>
-<br>
+<h1 appDirective>{{messageComponent}}</h1>
+<br> 
+<div [ngStyle]="{'color' : color, 'font-size': fontSize}">Texto con estilo dinámico.</div>
+<div [ngStyle]="{'highlight' : isHighlight}">ngClass.</div>
+<div *ngIf="isVisible">Aqui estoy Dev.</div>
+
+
+<ul appDirective>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<br><br>
 <button type="button" (click)="greet()">Greet Saludo</button>
 <button type="button" (click)="questionForSecondary()"> Qestion For Secondary</button>
 <p *ngIf="greetingMessage">{{greetingMessage}}</p>

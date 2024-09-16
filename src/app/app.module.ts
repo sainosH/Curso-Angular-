@@ -7,13 +7,17 @@ import { MainComponent } from './main/main.component';
 import { SecondaryComponent } from './secondary/secondary.component';
 import { FormsModule } from '@angular/forms';
 import { TertiaryComponent } from './tertiary/tertiary.component';
+import { Directive1Directive } from './directive/directive-1.directive';
+import { DirectiveDirective } from './directive/directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     SecondaryComponent,
-    TertiaryComponent
+    TertiaryComponent,
+    DirectiveDirective,
+    Directive1Directive
   ],
   imports: [
     BrowserModule,

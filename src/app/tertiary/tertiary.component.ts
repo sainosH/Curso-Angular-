@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ServiceComponentService } from '../service-component.service';
+import { ServiceComponentService } from '../service/service-component.service';
 
 @Component({
   selector: 'app-tertiary',
