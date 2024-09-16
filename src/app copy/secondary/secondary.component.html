@@ -1,0 +1,12 @@
+<h3>Component secondary works!</h3>
+
+<div>
+    <label for="Enter"> Escribe un SMS al main Component: </label><br>
+    <input type="text" name="sms" id="sms" [(ngModel)]="sendMessageSecondary">
+    <button type="button" (click)="sendMessage()">Enviar SMS</button>
+</div>
+
+<h1>CONTADOR</h1>
+
+<button type="button" (click)="less()">Decrementar</button>
+<button type="button" (click)="plus()">Incrementar</button>
